@@ -69,8 +69,31 @@
     <section>
         <h2>Kontakt</h2>
         <form action="TranNgocTran.html" method="post" target="_self">
+        <div>
+            Bitte Email:
+            <input type="email" placeholder="Please type your Email" required>
+        </div>
 
-        
+        <div>
+            <p><label for ="Lastname">Lastname:</label>
+            <input type="text" name="LastName" minlength="2" placeholder="Please write Familyname" id="Lastname"></p>
+        </div>
+
+        <div>
+            <p><label for="Geburtsdatum">Geburtsdatum :</label>
+            <input type="date" Datum="date" id="Geburtsdatum"></p>  
+        </div>
+
+        <div>
+            Deine Lieblingsfarbe:
+            <input type="color" name="color">
+        </div>
+
+        <div>
+            Ihre Nachricht:
+            <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+        </div>
+        <button type="submit">Senden</button>
         </form>
     <hr> 
     </section>
