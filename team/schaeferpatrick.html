@@ -9,82 +9,39 @@
     <body style="Background-color: #5398F5;">
         
     <center>
-        <!--########## Über mich Sektion Start ##########  -->
-        <h1>Visitenkarte</h1>
-        <hr>
-        
-    <section>
-        <h2>Persönliche Informationen</h2>
-        
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>Patrick Schäfer</td>
-            </tr>
-            <tr>
-                <td>Adresse</td>
-                <td>Glitzerallee 23, 45896 Glitzerhausen</td>
-            </tr>
-            <tr>
-                <td>Geb.</td>
-                <td>30.02.2111</td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <td>Picture</td>
-                <td>Bild folgt</td>
-            </tr>
-            
-        </table>
-        <hr>
-    </section>
-                        
-        
-        <!--########## Hobby Sektion Start ##########-->
-        <section>
-        
-            <h2>Meine Hobbys</h2>
-            <li> Hallenhalma</li>
-            <li> Eierwerden</li>
-            <li>Turteltaubenschiessen</li>
-        
-        </section>
-     
-           
-        <hr>
-        
-        <!--########## Kontakt Sektion Start ##########-->
-        <section><h2>Meine Kontaktdaten</h2></section>
-        <form method="post" target="_self">
-            Name:
-            <input type="text" name="Name">
-            <br><br>
-            
-            Nachname:
-            <input type="text" name="Nachname">
-            <br><br>
-            
-            Email Adresse:
-            <input type="email" name="Email">
-            <br><br>
-        
-            Bitte schreiben Sie etwas über sich
-            <br><br>
-            <textarea name="textfeld"></textarea>
-            <br><br>
-            
-            <button type="submit">senden</button>
-            
-            
+        <!--########## Kontaktformular ##########  -->
+        <h1>Kontaktforumular</h1>
+        <br>
+        <br>
+        <form action="schaeferpatrick.html" method="post" target="_self">
+            <div>
+                Emailadresse:
+                <input type="Email" placeholder="Please type your mail" required/>
+            </div>
+            <br>
+            <div>
+                Nachname:
+                <input type="Lastname" minlength="2" placeholder="Please type your Lastname" required/>
+            </div>
+            <br>
+            <div>
+                Farbe:
+                <input type="Color" value="#36d3e7" placeholder="Please type your color" required/>
+            </div>
+            <br>
+            <div>
+                Birthday:
+                <input type="date" name="birthday" placeholder="Please type your Birthday" required/>
+            </div>
+            <br>
+            <div>
+                <textarea type="Message" id="" cols="30" rows="10" placeholder="Please type your Message" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Senden</button>
 
         </form>
-                
-        <hr>
         
-
     </center>
     </body>
 </html>
