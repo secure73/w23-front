@@ -64,6 +64,33 @@
     <!-- ########## Start Kontakt Sektor ########## -->
     <section>
         <h2>Kontakt</h2>
+            <form action="" method="post" target="_self">
+                <div>
+                    Bitte schreiben Sie Ihre Email-Adresse
+                    <input type="email" name="email" placeholder="Ihre Email" required/>
+                </div>
+
+                <div>
+                    Bitte schreiben Sie Ihren Namen
+                    <input type="text" name="nachname" minlength="2" placeholder="Ihr Nachname"/>
+                </div>
+
+                <div>
+                    Bitte schreibe deine Lieblingsfarbe
+                    <input type="color" name="color" value="#33E5FF"/>
+                </div>
+
+                <div>
+                    Bitte schreiben Sie Ihr Geburtsdatum
+                    <input type="date" name="birthday"/>
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
         <hr>
     </section>
     <!-- ########## Ende Kontakt Sektor ########## -->
