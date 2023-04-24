@@ -4,64 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Aljbawi</title>
+    <title>Mohammad Aljbawi Kontakt</title>
 </head>
-<body style="color: rgb(54, 175, 75); background-color: rgb(102, 105, 105);">
-   
-    <!-- Just look like Division it is just to difference  
-   <section>
-     This is A div: "Devision"
-     <div>
-       
-     </div>
-   </section> -->
-   <h1>This is my personal page </h1>
-   <hr>
-   <hr>
-   <br>
-   <!-- ++++++++++++Übermich++++++++++++++++++++++ -->
-   <section>
-   <h4> Übermich</h4>
-    <p>My Name is Mohammad Aljbawi</p>
-    <table>
+<body style="background-color: white; color: greenyellow;">
+        <h1> Kontakt</h1>
+        <p style="color: red;">Felder mit * sind pflichtet</p>
+         <form method="post" target="_self">
+             <p>Anrede: <sup style="color: red;">*</sup></p>
+             <br>
+             <div>
+                 <input type="radio" id="herr"  name="anrede" value="herr">
+                 <label for="herr">Herr</label>
+                 <input type="radio" id="frau"  name="anrede" value="frau">
+                 <label for="frau">Frau</label>
+                 <input type="radio" id="andere"  name="anrede" value="ander">
+                 <label for="andere">Andere</label>
+             <hr>
+             </div>
+             
+             <p>Ur account Data:</p>
+             <br>
+             
+                 <label for="username">Username:<sup style="color: red;">*</sup></label>
+                 <input type="text"  required id="username" placeholder="Username" name="username" >
+                 <br>
 
-        <tr>  
-            <td>Info</td>
-            <td>Data</td>
-        </tr>
-        <tr>
-            <td>Name:</td>
-            <td>Mohammad Aljbawi</td>
-        </tr>
-        <tr>
-            <td>Wohnort:</td>
-            <td>Lemgo</td>
-        </tr>
-        <tr> 
-            <td>Geburtsdatum:</td>
-            <td>24.01.1992</td>
-        </tr>
+                 <label for="geburt">Geburtsdatum.<sup style="color: red;">*</sup></label>
+                 <input type="date" required id="geburt">
+                 <br>
 
-    </table>
-   </section>
-   <hr>
-   <!-- +++++++++++++++++++++My hoppies++++++++++ -->
-   <section>
-    <h4>Hobby:</h4>
-    <ul>
-        <li>E-Spiele</li>
-        <li>Essen</li>
-        <li>Basketball</li>
-        <li>Schlafen</li>
-    </ul>
-    </section>
-    <hr>
-     <!-- +++++++++++++++++++++My contacts++++++++++-->
-   
-   <hr>
+                 <label for="password">Password:<sup style="color: red;">*</sup></label>
+                 <input type="password" id="password" placeholder="Password" required name="password">
+                 <br>
 
-
-    
-
+                 <label for="email">E-Mail:<sup style="color: red;">*</sup></label>
+                 <input type="email" id="email" placeholder="E-Mail" required name="email">
+                 <br>
+             <hr>
+     
+             <div>
+                 <label for="select"> Choose:</label>
+                 <select name="select" id="select" >
+                    <option value=" disabled selected value"></option>
+                     <option value="Beschwerde">Beschwerde</option>
+                     <option value="Feedback">Feedback</option>
+                     <option value="Spenden">Spenden</option>
+                     <option value="Beschwerde">Beschwerde</option>
+                 </select>
+             </div>
+             <div>
+                <p>The Message:</p>
+                 <textarea name="textarea" id="textarea" cols="60" rows="15" name="text" placeholder="U have 100 Woord" style=" color: greenyellow;"></textarea>
+             </div>
+             <button>Send</button>
+         </form>
 </body>
 </html>
