@@ -63,44 +63,25 @@
         <!--#### Section Kontakt #####-->
         <section>
             <h2>Kontakt</h2>
-            <form>
-                <p>Benutzername</p>
-                <br>
-                <input type="text" name="benutzername"></input>
-                <br>
-                <br>
-                <p>Passwort</p>
-                <br>
-                <input type="password" name="password"></input>
-                <br>
-                <br>
-                <p>Kommentar</p>
-                <br>
-                <textarea name="Kommentar"></textarea>
-                <br>
-                <br>
-                <p>Subscribed</p>
-                <br>
-                <input type="checkbox">
-                <br>
-                <br>
-                 männlich
-                <input type="radio" name="gender" value="m">
-                 weiblich
-                <input type="radio" name="gender" value="f">
-                 divers
-                <input type="radio" name="gender" value="d">
-                <br>
-                <br>
-                <p>Kenntnisse</p>
-                 Anfänger
-                <input type="radio" name="Kenntnis" value="a">
-                 Fortgeschritten
-                <input type="radio" name="Kenntnis" value="F">
-                 Profi
-                <input type="radio" name="Kenntnis" value="p">
-                <br>
-                <br>
+            <form action="walyMarcel.html" method="post" target="_self">
+                <div>
+                    <input type="email" name="email" placeholder="Email eingeben" required/>
+                </div>
+                <div>
+                    <input type="text" name="Nachname" minlength="2" placeholder="Nachname" />
+                </div>
+                <div>
+                    Lieblingsfarbe
+                    <input type="color" name="Color" />
+                </div>
+                <div>
+                    Geburtsdatum
+                    <input type="date" name="Geburtsdatum">
+                </div>
+                <div>
+                    Nachricht
+                    <textarea name="message" placeholder="Ihre Nachricht eingeben"></textarea>
+                </div>
                 <button type="submit">senden</button>
             </form>
             <hr>
