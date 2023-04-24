@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vladimir Vataman</title>
 </head>
+<style>
+    form div
+    {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    form span
+    {
+        width: 200px;
+    }
+</style>
+
 <body style="background-color: burlywood; font-family: 'Lucida Sans Unicode', sans-serif">
     <section>
         <h1 style="color: brown;">Über mich</h1>    
@@ -43,34 +56,27 @@
     <!-- ################## Start Section Kontakt ############## -->
     <section>
         <h2 style="color: blue;">Kontakt</h2>
-        <form action="" method="get" target="_self">
-            
-            <p>bitte schreiben Sie Ihre nachname:</p>
-            <input type="text" name="familyname">
-            <p>Password:</p>
-            <input type="password">
-            <br><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <br><br>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <br><br>
+            <form action="" method="get" target="_self">
+                <div><span>Please type your email:</span>  
+                    <input type="email" name="email" placeholder="Please type your email" id="">
+                </div>
+                <div><span>please write email:</span>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write email" required>
+                </div>
+                <div><span>deine Lieblings Farbe:</span>
+                    <input type="color" name="color" id="">
+                </div>
+                <div><span>bitte G.b:</span>
+                    <input type="date" name="birthdate" id="">  
+                </div>
+                <div><span style="vertical-align: top">ihre Nachricht:</span>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+                </div>
 
-            mänlich
-            <input type="radio" name="gender" id="" value="m">
-            weblich
-            <input type="radio" name="gender" id="" value="f">
-            <br><br>
-            subscribe
-            <input type="radio" name="subscribe" id="">
-            just to see
-            <input type="radio" name="subscribe" id="">
-            fun
-            <input type="radio" name="subscribe" id="">
-            <br><br>
-            <button type="submit">senden</button>
-        </form>
+                <button type="submit">senden</button>
+
+            </form>
+       
     </section>
     <!-- ################## End Section Kontakt ############## -->
 
