@@ -67,55 +67,44 @@
 
     <!--Kontakt section start-->
     <section>
-        <h2 style="color:floralwhite">Kontakt</h2>
-        <form method="get" target="_self"
+        <h2 style="color: floralwhite;">Kontakt</h2>
 
-        style="color:floralwhite">
+        <form style="color: floralwhite;" action="SchatzRobin.html" method="post" target="_self" >
 
-            Vor-Nachname <br>
-            <input type="text">
-            <br>
-            <br>
+            <div>
+                
+                Email<br>
+                <input type="email" name="Mail" placeholder="bitte mail adresse angeben" required>
 
-            Passwort <br>
-            <input type="password">
-            <br>
-            <br>
+            </div>
+<br><br>
+            <div>
+                Name<br>
+                <input type="text" name="Vor und Nachname" minlength="3" placeholder="bitte namen eintragen"  >
 
-            Weitere Angaben <br>
-            <textarea></textarea>
-            <br>
-            <br>
+            </div>
+<br><br>
+            <div>
+                Geb.D <br>
+                <input type="date" name="Geburtsdatum" placeholder="ihr geburtsdatum" >
+            </div>
+<br><br>
+            <div>
+                 lieblingsfarbe
+                <input type="color" name="Farbe" >
 
-            10-18 Jahre
-            <input type="checkbox">
-            <br>
-            <br>
+            </div>
+<br><br>
+            <div>
+                Nachricht<br>
+                <textarea name="Nachricht" placeholder="ihre Nachricht" cols="30" rows="10"></textarea>
+            </div>
+<br><br>
+           
 
-            18-25 Jahre
-            <input type="checkbox">
-            <br>
-            <br>
-
-            25-35 Jahre
-            <input type="checkbox">
-            <br>
-            <br>
-
-            weiblich
-            <input type="radio" name="gender" value="f">
-            männlich
-            <input type="radio" name="Robin" value="m">
-            divers
-            <input type="radio" name="Robin">
-            <br>
-            <br>
-            
-            <button type="submit">Senden</button>
 
         </form>
-
-        <hr>
+       <hr>
     </section>
     <!--Kontakt section end-->
 
