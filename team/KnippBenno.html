@@ -7,6 +7,99 @@
     <title>Benno Knipp</title>
 </head>
 <body>
-    <h1>Benno Knipp</h1>
+    <!-- ### Start Übermich Section ### -->
+    <section>
+         <h1>Übermich</h1>
+         <hr>
+    </section>
+    <!-- ### Ende Übermich Section ### -->
+    <p>hier könnte ihre Werbung stehen</p>
+    <!-- ### "Paragraph-tag - einfache Texteingabe" ### -->
+
+    <!-- ### Start Section Pesönliche Info ### -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Benno Knipp</h3>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Benno Knippp</td>
+            </tr>
+            <tr>
+                <td>Adresse:</td>
+                <td>Rosenbach 3</td>
+            </tr>
+            <tr>
+                <td>Gb Datum</td>
+                <td>01.01.00</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>foto kommt bald...</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <!-- ### Ende ection Pesönliche Info ### -->
+
+    <!-- ### Start Section Hobby ### -->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>Golf</li>
+            <li>Minigolf</li>
+            <li>Golfsimulator</li>
+            <li>Minigolfsimulator</li>
+        </ul>
+        <hr>
+    </section>
+    <!-- ### Ende Section Hobby ### -->
+
+    <!-- ### Start Section Kontakt ### -->
+    <section>
+       <h2>Kontakt</h2>
+       <form action="KnippBenno.html" method="post" target="self">
+            <div>
+                <input type="email" name="email" placeholder="email" required/>
+                <!-- ### placeholder statt es außen zu schreiben wie unten 
+                          required = Pflichtfelder ### -->
+            </div>   
+            <br>
+
+            <div>
+                <input type="text" name="Nachname" minlength="3" placeholder="enter name">
+            </div>
+            
+            <div>
+               <p> Lieblingsfarbe </p>
+                <input type="color" name="color" value="#ff0000">
+            </div>
+            <br><br>
+
+            <div>
+                Geburtsdatum:
+                <input type="date" name="Geburtsdatum">
+            </div>  
+            <br><br>
+
+            <div>
+                Nachricht: <br>
+                <textarea name="Nachricht" placeholder="ihre Nachricht"></textarea>
+            </div>   
+            <button type="submit">abschicken</button>
+       </form>
+        <hr>
+    
+    </section>
+    <!-- ### Ende Section Kontakt ### -->
+
 </body>
 </html>
