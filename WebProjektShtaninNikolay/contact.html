@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
+    <link rel="import" href="app.js">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,5 +15,40 @@
     <hr>
     <h1>Kontaktformular</h1>
     <hr>
+    <div>
+        <form action="contact.html" method="POST" target="_blank">
+            <div class="Anrede">
+                <label for="herr">Herr</label>
+                <input type="radio" name="anrede" id="herr" value="herr">
+                <label for="frau">Frau</label>
+                <input type="radio" name="anrede" id="frau" value="frau">
+                <label for="ohne">ohne Anrede</label>
+                <input type="radio" name="anrede" id="ohne" value="ohne" checked>
+                <br>
+            </div>
+            <div class="compleetName">
+                <label for="firstname">Vorname</label>
+                <input id=firstname type="text" name="firstname" placeholder="Vorname" required>
+                <br><br>
+                <label for="secondname">Nachname</label>
+                <input id=secondname type="text" name="secondname" placeholder="Nachname" required>
+                <br>  <br>  
+            </div>
+            <div class="Email">
+                <label for="email">Email</label>
+                <input id=email type="email" name="email" required>
+                <br>
+                <label for="spam">Spam bekommen?</label>
+                <input type="checkbox" name="spam" id="spam" checked>
+                <br>    <br>
+            </div>
+            <div class="Nachricht">
+                <label for="nachricht">Nachricht</label><br>
+                <textarea id=nachricht name="nachricht" placeholder="Ihre Nachricht hier eingeben..."></textarea>
+                <br>
+                <button type="submit">Absenden</button>    
+            </div>
+            </form>
+    </div>
 </body>
 </html>
