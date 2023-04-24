@@ -65,8 +65,36 @@
 
     <!-- ### Start Section Kontakt ### -->
     <section>
-        <h2>Kontakt</h2>
+       <h2>Kontakt</h2>
+       <form action="KnippBenno.html" method="post" target="self">
+            <div>
+                <input type="email" name="email" placeholder="email" required/>
+                <!-- ### placeholder statt es außen zu schreiben wie unten 
+                          required = Pflichtfelder ### -->
+            </div>   
+
+            <div>
+                <input type="text" name="Nachname" minlength="3" placeholder="enter name">
+            </div>
+            
+            <div>
+                Lieblingsfarbe
+                <input type="color" name="color" value="#ff0000">
+            </div>
+
+            <div>
+                Geburtsdatum:
+                <input type="date" name="Geburtsdatum">
+            </div>  
+
+            <div>
+                Nachricht:
+                <textarea name="Nachricht" placeholder="ihre Nachricht"></textarea>
+            </div>   
+            <button type="submit">abschicken</button>
+       </form>
         <hr>
+    
     </section>
     <!-- ### Ende Section Kontakt ### -->
 
