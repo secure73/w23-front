@@ -63,6 +63,30 @@
     <!--############## Start Section Kontakt ##############-->
     <section>
         <h2>Kontakt</h2>
+        <form action="RotaermelJurie.html" method="post" target="_self">
+            <div>
+                <input type="email" name="email" placeholder="Bitte E-Mail schreiben" required>
+            </div>
+
+            <div>
+                <input type="text" name="lastname" minlength="2" placeholder="Bitte Name schreiben">
+            </div>
+
+            <div>
+                Deine Farbe
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+
+            <div>
+                Bitte Geburtsdatum
+                <input type="date" name="bday">
+            </div>
+
+            <div>
+                <textarea name="massage" placeholder="Ihre Nachricht"></textarea>
+            </div>
+            <button type="submit">Senden</button>
+        </form>
         <hr>
     </section>
     <!--############## End Section Kontakt ##############-->
