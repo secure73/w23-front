@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Korff</title>
+
+    <style>
+      .Textfeld {
+
+        height: 300px;
+        width: 700px;
+      }
+
+
+
+
+
+    </style>
 </head>
 <body bgcolor= "#000000" text= "darkgreen">
 
@@ -75,8 +88,37 @@
   <td>E.mail</td>
   <td>ck148096@gmail.com</td>
 </tr>
+     </table><br><br>
+<!-- #########Anfang Kontaktformular########## -->
 
-       </table>
+     <form action="korffchristian.html" method="post" target="_self">
+      <div>
+                  E-Mail: <br>
+                  <input type="email" name="email" placeholder="Trage deine E-mail ein" required>
+      </div>
+                  Name:<br>
+                  <input type="text" name="Username" placeholder="Trage deinen Namen ein" required>
+      <div>
+                  Geburtsdatum:<br>
+                  <input type="date" name="gbdate">
+      </div>
+
+      <div>
+                  Lieblingsfarbe:<br>
+                  <input type="color" name="FavColor" placeholder="Trage deine Lieblingsfarbe ein">
+      </div>
+
+
+      <div>
+                  Ihre Nachricht:<br>
+                  <textarea name="Nachricht" placeholder="Schreibe deine Nachricht" class="Textfeld"></textarea>
+      </div>
+
+        <button type="submit">Senden</button>
+
+
+     </form>
+
     </section>
     <hr>
     <!--####### End Kontakt Section ########-->
