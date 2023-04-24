@@ -105,15 +105,25 @@
 
       <div>
                   Lieblingsfarbe:<br>
-                  <input type="color" name="FavColor" placeholder="Trage deine Lieblingsfarbe ein">
+                  <input type="color" name="FavColor" placeholder="Trage deine Lieblingsfarbe ein" name="Farbe
+                  ">
       </div>
 
 
       <div>
                   Ihre Nachricht:<br>
-                  <textarea name="Nachricht" placeholder="Schreibe deine Nachricht" class="Textfeld"></textarea>
+                  <textarea name="Nachricht" placeholder="Schreibe deine Nachricht" class="Textfeld" name="Nachricht"></textarea>
       </div>
-
+                    Male
+                    <input type="radio" required name="Gender" value="Male">
+                    Female
+                    <input type="radio" required name="Gender" value="Female">
+                    <br>
+                    Unternehmen
+                    <input type="radio" name="Status" value="Unternehmen">
+                    Privat
+                    <input type="radio" name="Status" value="Privat">
+                    <br>
         <button type="submit">Senden</button>
 
 
