@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Korff</title>
+
+    <style>
+      .Textfeld {
+
+        height: 300px;
+        width: 700px;
+      }
+
+
+
+
+
+    </style>
 </head>
 <body bgcolor= "#000000" text= "darkgreen">
 
@@ -75,8 +88,47 @@
   <td>E.mail</td>
   <td>ck148096@gmail.com</td>
 </tr>
+     </table><br><br>
+<!-- #########Anfang Kontaktformular########## -->
 
-       </table>
+     <form action="korffchristian.html" method="post" target="_self">
+      <div>
+                  E-Mail: <br>
+                  <input type="email" name="email" placeholder="Trage deine E-mail ein" required>
+      </div>
+                  Name:<br>
+                  <input type="text" name="Username" placeholder="Trage deinen Namen ein" required>
+      <div>
+                  Geburtsdatum:<br>
+                  <input type="date" name="gbdate">
+      </div>
+
+      <div>
+                  Lieblingsfarbe:<br>
+                  <input type="color" name="FavColor" placeholder="Trage deine Lieblingsfarbe ein" name="Farbe
+                  ">
+      </div>
+
+
+      <div>
+                  Ihre Nachricht:<br>
+                  <textarea name="Nachricht" placeholder="Schreibe deine Nachricht" class="Textfeld" name="Nachricht"></textarea>
+      </div>
+                    Male
+                    <input type="radio" required name="Gender" value="Male">
+                    Female
+                    <input type="radio" required name="Gender" value="Female">
+                    <br>
+                    Unternehmen
+                    <input type="radio" name="Status" value="Unternehmen">
+                    Privat
+                    <input type="radio" name="Status" value="Privat">
+                    <br>
+        <button type="submit">Senden</button>
+
+
+     </form>
+
     </section>
     <hr>
     <!--####### End Kontakt Section ########-->
@@ -134,5 +186,101 @@
         <a href="walyMarcel.html"><button>Waly, Marcel</button></a>
       </ul></p>
     </center>
+</body>
+</html>
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Khorsandfard</title>
+</head>
+<body>
+    <!--################### Start Übermich Section #################   -->
+    <section>
+        <h1>Übermich</h1>    
+        <hr>
+    </section>
+    <!--################### End Übermich Section #################   -->
+
+    <!-- ################## Start Section Persönliche Info ############## -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Ali Khorsandfard</h3>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Ali Khorsandfard</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Blastr.7 46451 GütStadt</td>
+            </tr>
+            <tr>
+                <td>Gb Datum</td>
+                <td>01.01.1600</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
+        </table>
+        <hr>
+    </section>
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>swimmen</li>
+            <li>spielen mim Hund</li>
+            <li>kino</li>
+        </ul>
+        <hr>
+    </section>
+    <!-- ################## End Section Hobby ############## -->
+
+    <!-- ################## Start Section Kontakt ############## -->
+    <section>
+        <h2>Kontakt</h2>
+            <form action="KhorsandfardAli.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
+                </div>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
+                </div>
+
+                <div>
+                    dine Liebligs Farbe:
+                    <input type="color" name="color"/>
+                </div>
+
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
+        <hr>
+    </section>
+    <!-- ################## End Section Kontakt ############## -->
+    
 </body>
 </html>
