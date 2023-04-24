@@ -14,7 +14,7 @@
 
          <h1>Über mich</h1>
          <hr>
-
+         
         <div>
             <!--########## Section Eckdaten ###########-->>
             <section>
@@ -57,30 +57,32 @@
             <section>
                 <hr>
                 <h2>Kontakt</h2>
-                <form>
-                    <p>Email</p>
-                    <input type="email">
-                    <br>
-                    <br>
-                    <p>Passwort</p>
-                    <input type="password"></input>
-                    <br>
-                    <br>
-                    <p>Nachricht<input type="checkbox"></p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <br>
-                    männlich
-                    <input type="radio" name="TJ">
-                    weiblich
-                    <input type="radio" name="TJ">
-                    <br><br>
-                    subscribe
-                    <input type="radio" name="JT">
-                    unsubscribe
-                    <input type="radio" name="JT">
-                    <br><br>
-                    <button type="submit">Senden</button>
+                <form action="JuengerTobias.html" method="post" taregt="_self">
+                    <div>
+                        Name:
+                        <input type="text" name="surname" minlength="2" placeholder="enter Name" required>
+                    </div>
+                    <div>
+                        Email:
+                        <input type="email" name="Mail" placeholder="Enter Email" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Lieblingsfarbe:
+                        <input type="color" name="color" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Geburtstag:
+                        <input type="date" name="Geb" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Ihre Nachricht
+                        <textarea name="nachricht" placeholder="Ihre Nachricht..."></textarea>
+                        <br><br>
+                    </div>
+                    <button type="submit">Submit</button>
                 </form>
             </section>
         </div>
