@@ -40,7 +40,7 @@
   border-color: rgb(192,192,192);
   border-radius: 2px;
   box-shadow: inset 1px 2px 2px rgb(67, 67, 67);
-  width: 0;
+  width: 120px;
 }
 
 .search-bar::placeholder {
