@@ -3,12 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milic Julija</title>
+    <title>Julija Milic</title>
 </head>
-<body  style="background-color:powderblue;">
+<body>
     <!--################### Start Übermich Section #################   -->
     <section>
-        <h1>Über mich</h1>    
+        <h1>Übermich</h1>    
         <hr>
     </section>
     <!--################### End Übermich Section #################   -->
@@ -16,30 +16,30 @@
     <!-- ################## Start Section Persönliche Info ############## -->
     <section>
         <h2>Persönliche Info</h2>
-        <h3>Milic Julija</h3>
+        <h3>Julija Milic</h3>
         <table>
             <tr>
-                <td><u>info</u></td>
-                <td><u>data</u></td>
+                <td>info</td>
+                <td>data</td>
             </tr>
             <tr>
-                <td>Name:</td>
-                <td>Milic Julija</td>
+                <td>Name</td>
+                <td>Julija Milic</td>
             </tr>
             <tr>
-                <td>Address:</td>
-                <td>Blatstr.7 46451 GütStadt</td>
+                <td>Address</td>
+                <td>Blastr.7 46451 GütStadt</td>
             </tr>
             <tr>
-                <td>Gb Datum:</td>
-                <td>01.01.1900</td>
+                <td>Gb Datum</td>
+                <td>01.01.1600</td>
             </tr>
             <tr>
-                <td>Gender:</td>
+                <td>gender</td>
                 <td>Female</td>
             </tr>
             <tr>
-                <td>Picture:</td>
+                <td>picture</td>
                 <td>Foto kommt bald...</td>
             </tr> 
         </table>
@@ -51,9 +51,9 @@
     <section>
         <h2>Hobby</h2>
         <ul>
-            <li>Sport</li>
+            <li>sport</li>
             <li>lesen</li>
-            <li>PC</li>
+            <li>pc</li>
         </ul>
         <hr>
     </section>
@@ -62,7 +62,31 @@
     <!-- ################## Start Section Kontakt ############## -->
     <section>
         <h2>Kontakt</h2>
+            <form action="MilicJulija.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
+                </div>
 
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
+                </div>
+
+                <div>
+                    dine Liebligs Farbe:
+                    <input type="color" name="color"/>
+                </div>
+
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
         <hr>
     </section>
     <!-- ################## End Section Kontakt ############## -->
