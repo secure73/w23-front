@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jünger</title>
-</head>
-<body>
 
-    <h1>Tobias Jünger</h1>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jünger</title>
+    </head>
+
+    <body>
+
+         <!--########## Division Über mich ###########-->
+
+         <h1>Über mich</h1>
+         <hr>
+         
+        <div>
+            <!--########## Section <Persönliche Info> ###########-->
+            <section>
+                <h2>Persönliche Info</h2>
+                <h3>Tobias Jünger</h3>
+                <table>
+                    <tr>
+                        <td><h4>Info</h4></td>
+                        <td><h4>Data</h4></td>
+                    </tr>
+                    <tr>
+                        <td><b>Name:</b></td>
+                        <td>Tobias Jünger</td>
+                    </tr>
+                    <tr>
+                        <td><b>Adresse:</b></td>
+                        <td>Grove Street. 5 58447 Weiden</td>
+                    </tr>
+                    <tr>
+                        <td><b>Geburtstag:</b></td>
+                        <td>07.03.1996</td>
+                    </tr>
+                    <tr>
+                        <td><b>Profilbild:</b></td>
+                        <td><img src="C:\Testordner für git/affen-selfie-peta-david-slater.jpg" alt="Bild eines Affen" width="400"></td>
+                        <br>
+                    </tr>
+                </table>
+            </section>
+            <!--########## Section Hobbys ###########-->
+            <section>
+                <hr>
+                <h2>Hobby</h2>
+                <ul>
+                    <li>Zocken</li>
+                    <li>Spaziergänge</li>
+                    <li>Sonnenuntergänge</li>
+                </ul>
+            </section>
+            <!--########## Section Kontakt ###########-->
+            <section>
+                <hr>
+                <h2>Kontakt</h2>
+                <form action="JuengerTobias.html" method="post" taregt="_self">
+                    <div>
+                        Name:
+                        <input type="text" name="surname" minlength="2" placeholder="enter Name" required>
+                    </div>
+                    <div>
+                        Email:
+                        <input type="email" name="Mail" placeholder="Enter Email" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Lieblingsfarbe:
+                        <input type="color" name="color" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Geburtstag:
+                        <input type="date" name="Geb" required>
+                        <br><br>
+                    </div>
+                    <div>
+                        Ihre Nachricht
+                        <br>
+                        <textarea name="nachricht" placeholder="Ihre Nachricht..."></textarea>
+                        <br><br>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+        <hr>
+
+         <!--########## Divisionsende ###########-->
+
+    </body>
 </html>
