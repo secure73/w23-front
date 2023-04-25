@@ -1,96 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jünger</title>
-    </head>
-
-    <body>
-
-         <!--########## Division Über mich ###########-->
-
-         <h1>Über mich</h1>
-         <hr>
-         
-        <div>
-            <!--########## Section <Persönliche Info> ###########-->
-            <section>
-                <h2>Persönliche Info</h2>
-                <h3>Tobias Jünger</h3>
-                <table>
-                    <tr>
-                        <td><h4>Info</h4></td>
-                        <td><h4>Data</h4></td>
-                    </tr>
-                    <tr>
-                        <td><b>Name:</b></td>
-                        <td>Tobias Jünger</td>
-                    </tr>
-                    <tr>
-                        <td><b>Adresse:</b></td>
-                        <td>Grove Street. 5 58447 Weiden</td>
-                    </tr>
-                    <tr>
-                        <td><b>Geburtstag:</b></td>
-                        <td>07.03.1996</td>
-                    </tr>
-                    <tr>
-                        <td><b>Profilbild:</b></td>
-                        <td><img src="C:\Testordner für git/affen-selfie-peta-david-slater.jpg" alt="Bild eines Affen" width="400"></td>
-                        <br>
-                    </tr>
-                </table>
-            </section>
-            <!--########## Section Hobbys ###########-->
-            <section>
-                <hr>
-                <h2>Hobby</h2>
-                <ul>
-                    <li>Zocken</li>
-                    <li>Spaziergänge</li>
-                    <li>Sonnenuntergänge</li>
-                </ul>
-            </section>
-            <!--########## Section Kontakt ###########-->
-            <section>
-                <hr>
-                <h2>Kontakt</h2>
-                <form action="JuengerTobias.html" method="post" taregt="_self">
-                    <div>
-                        Name:
-                        <input type="text" name="surname" minlength="2" placeholder="enter Name" required>
-                    </div>
-                    <div>
-                        Email:
-                        <input type="email" name="Mail" placeholder="Enter Email" required>
-                        <br><br>
-                    </div>
-                    <div>
-                        Lieblingsfarbe:
-                        <input type="color" name="color" required>
-                        <br><br>
-                    </div>
-                    <div>
-                        Geburtstag:
-                        <input type="date" name="Geb" required>
-                        <br><br>
-                    </div>
-                    <div>
-                        Ihre Nachricht
-                        <br>
-                        <textarea name="nachricht" placeholder="Ihre Nachricht..."></textarea>
-                        <br><br>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Jünger</title>
+</head>
+<body>
+    <!--################### Start Übermich Section #################   -->
+    <section>
+        <h1>Übermich</h1>    
         <hr>
+    </section>
+    <!--################### End Übermich Section #################   -->
 
-         <!--########## Divisionsende ###########-->
+    <!-- ################## Start Section Persönliche Info ############## -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Tobias Jünger</h3>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Ali Khorsandfard</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Blastr.7 46451 GütStadt</td>
+            </tr>
+            <tr>
+                <td>Gb Datum</td>
+                <td>01.01.1600</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
+        </table>
+        <hr>
+    </section>
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>Spaziergänge</li>
+            <li>Sonnenuntergänge</li>
+            <li>zocken</li>
+        </ul>
+        <hr>
+    </section>
+    <!-- ################## End Section Hobby ############## -->
 
-    </body>
+    <!-- ################## Start Section Kontakt ############## -->
+    <section>
+        <h2>Kontakt</h2>
+            <form action="KhorsandfardAli.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
+                </div>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
+                </div>
+
+                <div>
+                    dine Liebligs Farbe:
+                    <input type="color" name="color"/>
+                </div>
+
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
+        <hr>
+    </section>
+    <!-- ################## End Section Kontakt ############## -->
+    
+</body>
 </html>
