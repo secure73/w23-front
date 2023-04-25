@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +6,90 @@
     <title>Jurie Rotärmel</title>
 </head>
 <body>
-    <h1>Jurie Rotärmel</h1>
+    <!--############## Start Section Über mich  ##############-->
+    <section>
+        <h1>Über mich</h1>
+        <hr>
+    </section>
+    <!--############## End Section Über mich  ##############-->
+
+    <!--############## Start Section Persönliche Info ##############-->
+    <section>
+        
+        <h2>Persönliche Info</h2>
+        <h3>Jurie Rotärmel</h3>
+        <table>
+            <tr>
+                <td>Info</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Jurie Rotärmel</td>
+            </tr>
+            <tr>
+                <td>Adresse</td>
+                <td>Das-ist-der-Weg. 7 24680 Ortort</td>
+            </tr>
+            <tr>
+                <td>Geb. Datum</td>
+                <td>24.12.1357</td>
+            </tr>
+            <tr>
+                <td>Geschlecht</td>
+                <td>Männlich</td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>Coming Soon...</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <!--############## End Section Persönliche Info ##############-->
+
+    <!--############## Start Section Hobby ##############-->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>Laufen</li>
+            <li>Fliegen</li>
+            <li>Warten</li>
+        </ul>
+        <hr>
+    </section>
+    <!--############## End Section Hobby ##############-->
+
+    <!--############## Start Section Kontakt ##############-->
+    <section>
+        <h2>Kontakt</h2>
+        <form action="RotaermelJurie.html" method="post" target="_self">
+            <div>
+                <input type="email" name="email" placeholder="Bitte E-Mail schreiben" required>
+            </div>
+
+            <div>
+                <input type="text" name="lastname" minlength="2" placeholder="Bitte Name schreiben">
+            </div>
+
+            <div>
+                Deine Farbe
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+
+            <div>
+                Bitte Geburtsdatum
+                <input type="date" name="bday">
+            </div>
+
+            <div>
+                <textarea name="massage" placeholder="Ihre Nachricht"></textarea>
+            </div>
+            <button type="submit">Senden</button>
+        </form>
+        <hr>
+    </section>
+    <!--############## End Section Kontakt ##############-->
+    
 </body>
 </html>
