@@ -1,0 +1,73 @@
+.subscribe-button {
+  background-color: rgb(200, 0,0);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.1s, width 0.1s, height 0.1s;
+  margin-left: 10;
+  margin-right: 10px;
+  
+}
+
+  .subscribe-button:hover {
+    opacity: 0.7;
+    height: 31px;
+    width: 100px;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.35;
+    height: 41px;
+    width: 115px;
+  }
+
+.join-button {
+  background-color: white;
+  color: rgb(41, 118, 211);
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(41, 118, 211);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  margin-left: 10;
+  margin-right: 10px;
+}
+  .join-button:active {
+  opacity: 0.5;
+  }
+  .join-button:hover {
+  background-color: rgb(41, 118, 211);
+  color: white
+  }
+
+.tweet-button {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 76px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor:pointer;
+  transition: box-shadow 0.3s;
+  transition: background-color 0.3s;
+
+  margin-right: 10px;
+}
+.tweet-button:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.tweet-button:active {
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.15);
+}
