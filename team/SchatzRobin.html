@@ -1,112 +1,95 @@
 <!DOCTYPE html>
-<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robin Schatz</title>
 </head>
-<body style="background-color: rgb(37, 59, 45);">
-
-    <!--Über Mich section start -->
-   <section>
-        <h1 style="color:floralwhite">Über Mich</h1>
+<body>
+    <!--################### Start Übermich Section #################   -->
+    <section>
+        <h1>Übermich</h1>    
         <hr>
-   </section>
-   <!-- Über mich section end-->
+    </section>
+    <!--################### End Übermich Section #################   -->
 
-
-   <!--Persöhnliche information section start-->
-   <section>
-    <h2 style="color:floralwhite">Persohnliche Info</h2>
-        <h3 style="color:floralwhite"><i>Robin Schatz</i></h3>
+    <!-- ################## Start Section Persönliche Info ############## -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Robin Schatz</h3>
         <table>
             <tr>
-                <td style="color:floralwhite">info</td>
-                <td style="color:floralwhite" >data</td>
-            </tr>
-
-            <tr>
-                <td style="color:floralwhite">Adresse</td>
-                <td style="color:floralwhite">Wunderalee 36 45678 Traumland</td>
+                <td>info</td>
+                <td>data</td>
             </tr>
             <tr>
-                <td style="color:floralwhite">Gb Dateum</td>
-                <td style="color:floralwhite">01.10.1987</td>
+                <td>Name</td>
+                <td>Robin Schatz</td>
             </tr>
             <tr>
-                <td style="color:floralwhite">gender</td>
-                <td style="color:floralwhite">Male</td>
+                <td>Address</td>
+                <td>Blastr.7 46451 GütStadt</td>
             </tr>
             <tr>
-                <td>
-             <img src="C:\Users\RSchatz\OneDrive - Campus Bildung und Beruf\Bilder\man-raising-hand.webp" width="200" alt="emoji Mann der die Hand hebt">
-                </td>
+                <td>Gb Datum</td>
+                <td>01.01.1600</td>
             </tr>
-
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
         </table>
         <hr>
-   </section>
-   <!--Persöhnliche informationen section end-->
-
-
-    <!--Hobbys section start-->
+    </section>
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
     <section>
-        <h2 style="color:floralwhite">Hobbys</h2>
+        <h2>Hobby</h2>
         <ul>
-        <li style="color:floralwhite">Fußball</li>    
-        <li style="color:floralwhite">Sport</li>
-        <li style="color:floralwhite">lernen</li>
-        <li style="color:floralwhite" >kochen</li>
-        <li style="color:floralwhite">spazieren</li>
+            <li>swimmen</li>
+            <li>spielen mim Hund</li>
+            <li>kino</li>
         </ul>
         <hr>
     </section>
-    <!--Hobbys section end-->
+    <!-- ################## End Section Hobby ############## -->
 
-
-    <!--Kontakt section start-->
+    <!-- ################## Start Section Kontakt ############## -->
     <section>
-        <h2 style="color: floralwhite;">Kontakt</h2>
+        <h2>Kontakt</h2>
+            <form action="SchatzRobin.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
+                </div>
 
-        <form style="color: floralwhite;" action="SchatzRobin.html" method="post" target="_self" >
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
+                </div>
 
-            <div>
-                
-                Email<br>
-                <input type="email" name="Mail" placeholder="bitte mail adresse angeben" required>
+                <div>
+                    dine Liebligs Farbe:
+                    <input type="color" name="color"/>
+                </div>
 
-            </div>
-<br><br>
-            <div>
-                Name<br>
-                <input type="text" name="Vor und Nachname" minlength="3" placeholder="bitte namen eintragen"  >
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
+                </div>
 
-            </div>
-<br><br>
-            <div>
-                Geb.D <br>
-                <input type="date" name="Geburtsdatum" placeholder="ihr geburtsdatum" >
-            </div>
-<br><br>
-            <div>
-                 lieblingsfarbe
-                <input type="color" name="Farbe" >
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
 
-            </div>
-<br><br>
-            <div>
-                Nachricht<br>
-                <textarea name="Nachricht" placeholder="ihre Nachricht" cols="30" rows="10"></textarea>
-            </div>
-<br><br>
-           
-        </form>
-       <hr>
+                <button type="submit">senden</button>
+            </form>
+        <hr>
     </section>
-    <!--Kontakt section end-->
-
-
-
+    <!-- ################## End Section Kontakt ############## -->
+    
 </body>
 </html>
