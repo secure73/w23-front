@@ -1,23 +1,95 @@
 <!DOCTYPE html>
-<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Schäfer</title>
+    <title>Ali Khorsandfard</title>
 </head>
 <body>
-    <center>
+    <!--################### Start Übermich Section #################   -->
+    <section>
+        <h1>Über mich</h1>    
+        <hr>
+    </section>
+    <!--################### End Übermich Section #################   -->
 
-    <hr>
-    <h1>Patrick Schäfer</h1>
-    <hr>
-        <img src="1.jpg" alt="">
-        <br>
-        <p>12 Uhr .....treffen zum Brunch!</p>
-        <br>
-        <br>
-        <a href="geklickt.html">Trau dich doch und drück mal drauf</a>
-    </center>
+    <!-- ################## Start Section Persönliche Info ############## -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Patrick Schäfer</h3>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Patrick Schäfer</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Blastr.7 46451 GütStadt</td>
+            </tr>
+            <tr>
+                <td>Gb Datum</td>
+                <td>01.01.1600</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
+        </table>
+        <hr>
+    </section>
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>schwimmen</li>
+            <li>spielen mit dem Hund</li>
+            <li>kino</li>
+        </ul>
+        <hr>
+    </section>
+    <!-- ################## End Section Hobby ############## -->
+
+    <!-- ################## Start Section Kontakt ############## -->
+    <section>
+        <h2>Kontakt</h2>
+            <form action="SchaeferPatrick.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
+                </div>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
+                </div>
+
+                <div>
+                    dine Lieblings Farbe:
+                    <input type="color" name="color"/>
+                </div>
+
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
+        <hr>
+    </section>
+    <!-- ################## End Section Kontakt ############## -->
+    
 </body>
 </html>
