@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sören Moenke</title>
+    <title>SörenMoenke</title>
 </head>
 <body>
-    
-    <!--### Start Sektion über mich ###-->
-
+    <!--################### Start Übermich Section #################   -->
     <section>
-        <h1>Über mich</h1>
-        
+        <h1>Übermich</h1>    
         <hr>
     </section>
+    <!--################### End Übermich Section #################   -->
 
-    <!--### Ende Sektion über mich ###-->
-
-    <!--### Start Sektion mit meinen persönliche Informationen ###-->
-
+    <!-- ################## Start Section Persönliche Info ############## -->
     <section>
         <h2>Persönliche Info</h2>
         <h3>Sören Moenke</h3>
@@ -34,51 +28,74 @@
             </tr>
             <tr>
                 <td>Addresse</td>
-                <td>Evergreen terrece 742 Springfield</td>
+                <td>742 Evergreentarace Springfield</td>
             </tr>
             <tr>
-                <td>Geburtsdatum</td>
+                <td>Gb Datum</td>
                 <td>19.04.1943</td>
             </tr>
             <tr>
-                <td>Gender</td>
-                <td>BUFU</td>
+                <td>Geschlecht</td>
+                <td>Männlich</td>
             </tr>
             <tr>
-                <td>Picture</td>
-                <td>MeinBild</td>
-            </tr>
-            
+                <td>Bild</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
         </table>
         <hr>
     </section>
-
-    <!--### Ende Sektion mit meinen persönliche Informationen ###-->
-
-    <!--### Start Sektion über meine Hobbys ###-->
-
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
     <section>
         <h2>Hobby</h2>
         <ul>
-            <li>Tabletop</li>
+            <li>Tabletopp</li>
             <li>Kadse streicheln</li>
             <li>lauern</li>
         </ul>
         <hr>
     </section>
+    <!-- ################## End Section Hobby ############## -->
 
-    <!--### Ende Sektion über meine Hobbys ###-->
-
-    <!--### Start Sektion mit meinen Kontaktdaten ###-->
-
+    <!-- ################## Start Section Kontakt ############## -->
     <section>
         <h2>Kontakt</h2>
+            <form action="SörenMoenke.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="E-Mail" required/>
+                </div>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="Nachname"/> 
+                </div>
+
+                <div>
+                    <input type="text" name="firstName" minlength="2" placeholder="Vornamename"/> 
+                </div>
+
+                <div>
+                    deine Liebligs Farbe:
+                    <br>
+                    <input type="color" name="color"/>
+                </div>
+
+                <div>
+                    Geburtsdatum:
+                    <br>
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
         <hr>
     </section>
-
-    <!--### Ende Sektion mit meinen Kontaktdaten ###-->
-
-
-
+    <!-- ################## End Section Kontakt ############## -->
+    
 </body>
 </html>
