@@ -1,84 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vladimir Vataman</title>
 </head>
-<style>
-    form div
-    {
-        display: flex;
-        margin: 10px 0;
-    }
-
-    form span
-    {
-        width: 200px;
-    }
-</style>
-
-<body style="background-color: burlywood; font-family: 'Lucida Sans Unicode', sans-serif">
+<body>
+    <!--################### Start Übermich Section #################   -->
     <section>
-        <h1 style="color: brown;">Über mich</h1>    
+        <h1>Über mich</h1>    
         <hr>
     </section>
-    <!--################### End Über mich Section #################   -->
+    <!--################### End Übermich Section #################   -->
 
     <!-- ################## Start Section Persönliche Info ############## -->
     <section>
-        <h2 style="color: red;">Persönliche Info</h2>
+        <h2>Persönliche Info</h2>
         <h3>Vladimir Vataman</h3>
-        <ul>
-            <li>Vorname: Vladimir</li>
-            <li>Nachname: Vataman</li>
-            <li>Address: Bernhardstr. 26 59320 Ennigerloh</li>
-            <li>Gb. Datum: 27.07.1987</li>
-            <li>gender: male</li>
-            <li>picture: <img src="https://th.bing.com/th/id/OIP.IqHkj2T0I9UEf2zkYZoYTQHaEy?pid=ImgDet&rs=1" alt="" style="width: 500px; height: 300px; display: block;"></li>  
-        </ul>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Vladimir Vataman</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Bernhardstr. 26 59320 Ennigerloh</td>
+            </tr>
+            <tr>
+                <td>Gb Datum</td>
+                <td>27.07.1987</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>picture</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
+        </table>
         <hr>
     </section>
     <!-- ################## End Section Persönliche Info ############## -->
-
+    
     <!-- ################## Start Section Hobby ############## -->
     <section>
-        <h2 style="color: green;">Hobby</h2>
+        <h2>Hobby</h2>
         <ul>
-            <li>Schwimmen</li>
-            <li>spielen mit meinem Kind</li>
-            <li>Kino</li>
+            <li>swimmen</li>
+            <li>spielen mit Hund</li>
+            <li>kino</li>
         </ul>
+        <hr>
     </section>
     <!-- ################## End Section Hobby ############## -->
 
     <!-- ################## Start Section Kontakt ############## -->
     <section>
-        <h2 style="color: blue;">Kontakt</h2>
-            <form action="" method="get" target="_self">
-                <div><span>Please type your email:</span>  
-                    <input type="email" name="email" placeholder="Please type your email" id="">
+        <h2>Kontakt</h2>
+            <form action="VatamanVladimir.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="Please type your email" required/>
                 </div>
-                <div><span>please write email:</span>
-                    <input type="text" name="lastName" minlength="2" placeholder="please write email" required>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="please write family"/> 
                 </div>
-                <div><span>deine Lieblings Farbe:</span>
-                    <input type="color" name="color" value="#ff0000" id="">
+
+                <div>
+                    dine Liebligs Farbe:
+                    <input type="color" name="color"/>
                 </div>
-                <div><span>bitte G.b:</span>
-                    <input type="date" name="birthdate" id="">  
+
+                <div>
+                    birth date:
+                    <input type="date" name="birthdate"> 
                 </div>
-                <div><span style="vertical-align: top">ihre Nachricht:</span>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
                 </div>
 
                 <button type="submit">senden</button>
-
             </form>
-       
+        <hr>
     </section>
     <!-- ################## End Section Kontakt ############## -->
-
+    
 </body>
 </html>
