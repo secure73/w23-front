@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
-    <link rel="import" href="app.js">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,40 +15,51 @@
     <h1>Kontaktformular</h1>
     <hr>
     <div>
-        <form action="contact.html" method="POST" target="_blank">
+        <form action="app.js" method="POST" target="">
             <div class="Anrede">
-                <label for="herr">Herr</label>
-                <input type="radio" name="anrede" id="herr" value="herr">
-                <label for="frau">Frau</label>
-                <input type="radio" name="anrede" id="frau" value="frau">
+                <input type="radio" name="anrede" id="ohne" value="" checked>
                 <label for="ohne">ohne Anrede</label>
-                <input type="radio" name="anrede" id="ohne" value="ohne" checked>
+                <input type="radio" name="anrede" id="herr" value="Herr">
+                <label for="herr">Herr</label>
+                <input type="radio" name="anrede" id="frau" value="Frau">
+                <label for="frau">Frau</label>
                 <br>
             </div>
             <div class="compleetName">
-                <label for="firstname">Vorname</label>
+                <label for="firstname">Vorname:</label>
                 <input id=firstname type="text" name="firstname" placeholder="Vorname" required>
                 <br><br>
-                <label for="secondname">Nachname</label>
+                <label for="secondname">Nachname:</label>
                 <input id=secondname type="text" name="secondname" placeholder="Nachname" required>
                 <br>  <br>  
             </div>
             <div class="Email">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input id=email type="email" name="email" required>
                 <br>
                 <label for="spam">Spam bekommen?</label>
                 <input type="checkbox" name="spam" id="spam" checked>
                 <br>    <br>
             </div>
+            
             <div class="Nachricht">
-                <label for="nachricht">Nachricht</label><br>
+                <label for="betreff">Betreff:</label>
+                <select name="betreff" id="betreff">
+                    <option value="problem">Problem</option>
+                    <option value="beschwerde">Beschwerde</option>
+                    <option value="lob">Lob üben</option>
+                    <option value="sonstiges">Sonstiges</option>
+                </select><br>
+                <label for="nachricht">Nachricht:</label><br>
                 <textarea id=nachricht name="nachricht" placeholder="Ihre Nachricht hier eingeben..."></textarea>
                 <br>
-                <button type="submit">Absenden</button>    
+                <input type="submit" id="submit" value="Absenden">
+                <input type="reset" id="reset" value="Zurücksetzen">
+                
             </div>
             </form>
     </div>
     <hr>
+    <script src="app.js" type="module"></script>
 </body>
 </html>
