@@ -4,14 +4,14 @@
   bottom: 0;
   top: 60px;
   background-color: white;
-  width: 72px;
+  width: 52px;
   z-index: 200;
   padding-top: 5px;
   padding-left: 1px;
 }
 
 .sidebar-link {
-  height: 82px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +24,11 @@
 }
 
 .sidebar-link img {
-  height: 24px;
+  height: 22px;
 }
 
 .sidebar-link div {
   font-family: Roboto, Arial;
-  font-size: 10px;
+  font-size: 7px;
   margin-top: 10px;
-
 }

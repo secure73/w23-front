@@ -23,8 +23,8 @@
 
 .hamburger-menu {
   height: 24px;
-  margin-left: 24px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 19px;
 }
 
 .youtube-logo {
@@ -41,8 +41,8 @@
 }
 
 .search-bar {
-  flex: 1;
-  height: 32px;
+  flex: 0.8;
+  height: 31px;
   padding-left: 10px;
   font-size: 16px;
   border-width: 1px;
