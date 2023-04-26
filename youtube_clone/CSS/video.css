@@ -8,7 +8,7 @@
 }
 
 .profile-picture {
-  width: 40px;
+  width: 35px;
   border-radius: 50px;
 }
 
@@ -17,7 +17,8 @@
   margin-bottom: 10px;
   font-size: 10px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 15px;
+
 }
 
 .thumbnail-row {
@@ -39,8 +40,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 12px;
   row-gap: 20px;
-  padding-top: 15px;
-  padding-left: 90px;
+  padding-top: 10px;
+  padding-left: 75px;
 }
 
 @media (max-width: 700px) {
@@ -61,7 +62,6 @@
 }
 
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 7px;
   font-weight: 450;
 
