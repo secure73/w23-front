@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html lang="de"> 
 <head>
-<meta charset="UTF-8"> 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Waly</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Waly</title>
 </head>
 <body>
-    <h1>Marcel
-    </h1>
+    <!--################### Start Übermich Section #################   -->
+    <section>
+        <h1>Übermich</h1>    
+        <hr>
+    </section>
+    <!--################### End Übermich Section #################   -->
+
+    <!-- ################## Start Section Persönliche Info ############## -->
+    <section>
+        <h2>Persönliche Info</h2>
+        <h3>Marcel Waly</h3>
+        <table>
+            <tr>
+                <td>info</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Marcel Waly</td>
+            </tr>
+            <tr>
+                <td>Addresse</td>
+                <td>Blastr.7 46451 GütStadt</td>
+            </tr>
+            <tr>
+                <td>Gb. Datum</td>
+                <td>01.01.1600</td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>Foto kommt bald...</td>
+            </tr> 
+        </table>
+        <hr>
+    </section>
+    <!-- ################## End Section Persönliche Info ############## -->
+    
+    <!-- ################## Start Section Hobby ############## -->
+    <section>
+        <h2>Hobby</h2>
+        <ul>
+            <li>Gaming</li>
+            <li>Musik</li>
+            <li>Kochen</li>
+        </ul>
+        <hr>
+    </section>
+    <!-- ################## End Section Hobby ############## -->
+
+    <!-- ################## Start Section Kontakt ############## -->
+    <section>
+        <h2>Kontakt</h2>
+            <form action="walyMarcel.html" method="post" target="_self">
+                <div>
+                     <input type="email" name="email" placeholder="E-Mail eingeben" required/>
+                </div>
+
+                <div>
+                    <input type="text" name="lastName" minlength="2" placeholder="Nachname eingeben"/> 
+                </div>
+
+                <div>
+                    Lieblings Farbe:
+                    <input type="color" name="color"/>git add .
+                </div>
+
+                <div>
+                    GB. Datum:
+                    <input type="date" name="birthdate"> 
+                </div>
+
+                <div>
+                    <textarea name="message" placeholder="Ihre Nachricht"></textarea>
+                </div>
+
+                <button type="submit">senden</button>
+            </form>
+        <hr>
+    </section>
+    <!-- ################## End Section Kontakt ############## -->
+    
 </body>
 </html>
