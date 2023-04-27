@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+    background: linear-gradient(48deg, 
+    rgb(1, 54, 78) 25%, 
+    rgb(0, 88, 104) 50%, 
+    rgb(0, 112, 107) 75%, 
+    rgb(0, 0, 0) 100%);
+    background-size: 200vw 200vh; 
+    animation: gradient 10s ease infinite;
+
+    
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 200px;
+    width: 100vw;
+    background-color: #7c7c7c;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+    
+    
+  }
+  
+  nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0);
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: flex;
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 26px;
+    
+  }
+  
+  nav ul li:hover > a {
+    background: linear-gradient(-45deg,rgb(206, 206, 206), 
+    rgb(207, 207, 207),
+     rgb(117, 117, 117));
+    animation: gradient 5s ease infinite;
+    background-size: 400%;
+    border-radius: 10px;
+    z-index: 10;
+  }
+  
+  nav ul ul {
+    display: none;
+    position:absolute;
+    bottom: 100%;
+    border-radius: 20px;
+    left: -40px;
+    width: 200px;
+    background: linear-gradient(45deg,rgb(255, 255, 255), 
+    rgb(172, 172, 172),
+     rgb(223, 223, 223));
+     border-radius: 10px;
+    animation: gradient 5s ease infinite;
+    background-size: 400%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+    z-index: 1;
+    
+  }
+  
+  nav ul ul li {
+    position: relative;
+    text-align: center;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    
+  }
+  
+  nav ul ul li:hover > a {
+    background-color: #dadada;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  a {
+    transition: all 0.3s ease-out;
+    color: #000; /* цвет ссылки */
+    text-decoration: none; /* убираем подчеркивание */
+  }
+  
+  a:hover {
+    color: #fff; /* изменяем цвет при наведении */
+    background-color: #000; /* добавляем фоновый цвет при наведении */
+    opacity: 0.8; /* изменяем прозрачность при наведении */
+  }
