@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Variables</title>
   </head>
   <body>
     <script>
@@ -12,22 +12,32 @@
       let variable1 = 3;
       console.log(variable1);
 
-      let calculation = 0.1 + 0.2;
+      const calculation = 0.1 + 0.2;
       console.log(calculation)
       console.log(calculation + 2);
 
-      let result = calculation + 2;
+      const result = calculation + 2;
       console.log(result);
 
-      let message = 'hello';
+      const message = 'hello';
       console.log(message); console.log(';')
 
       variable1 = 5;
       console.log(variable1);
 
       variable1 = variable1 + 1;
-      console.log(variable1)
-      
+      console.log(variable1);
+
+      let variable2 = 3;
+      variable2 = 5;
+      console.log(variable2 +5);
+
+      //deprecated:
+      var variable3 = 3;
+
+      console.log(typeof variable2)
+      console.log(typeof message)
+       
 
     </script>
   </body>
