@@ -1,0 +1,185 @@
+html {
+        scroll-behavior: smooth;
+      }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+  }
+  body {
+    background-image: url(7.jpg);
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-size: 100vw;
+  }
+  
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #home {
+    color: #fff;
+    background-color: rgba(117, 117, 117, 0.075);
+    height: 1000px;
+    opacity: 1;
+    background: linear-gradient(black, gray);
+    background-attachment: scroll;
+    background-size: 100vw;
+    opacity: 0.4;
+  }
+  
+  #überuns {
+    color: #fff;
+    background-color: rgba(32, 32, 32, 0.6);
+    height: 1000px;
+    opacity: 1;
+  }
+  #kontakt {
+    background: linear-gradient(black
+    gray);
+    z-index: 1;
+  }
+  #kontakt {
+    color: #fff;
+    background-position: 10%;
+    background: linear-gradient(black
+    rgb(71, 71, 71));
+    background-image: url(6.jpg) ;
+    
+    height: 600px;
+    opacity: 0.9;
+    background-attachment: scroll;
+    z-index: 0;
+  }
+
+  #dienstleistungen {
+    color: #fff;
+    background-color: rgba(158, 158, 158, 0.2);
+    height: 1000px;
+    opacity: 0,5;
+  }
+
+  #konzept {
+    color: #fff;
+    background-color: rgba(56, 56, 56, 0.493);
+    height: 1000px;
+    opacity: 1;
+  }
+
+   
+  a {
+    display: block;
+    margin-top: 20px;
+    color: #797979;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding: 0px;
+    top: -1px;
+    width: 100vw;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    z-index: 1;
+    
+    
+  }
+  nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0);
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  
+  nav ul li {
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul li a {
+    display: flex;
+    padding: 10px;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul li:hover > a {
+    background-color: rgb(100, 100, 100);
+    border-radius: 0px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul ul {
+    display: none;
+    position:absolute;
+    top: 100%;
+    border-radius: 0px;
+    left: 0px;
+    width: 200px;
+    background-color: #dadada;
+    
+    
+  }
+  
+  nav ul ul li {
+    position: relative;
+    text-align: left;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    
+  }
+  
+  nav ul ul li:hover > a {
+    background-color: #616161;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  a {
+    transition: all 0.3s ease-out;
+    color: #c02828; /* цвет ссылки */
+    text-decoration: none; /* убираем подчеркивание */
+  }
+  
+  a:hover {
+    color: #fff; /* изменяем цвет при наведении */
+    background-color: #000; /* добавляем фоновый цвет при наведении */
+    opacity: 0.8; /* изменяем прозрачность при наведении */
+  }

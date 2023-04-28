@@ -110,7 +110,7 @@ body {
 
   a {
     transition: all 0.3s ease-out;
-    color: #000; /* цвет ссылки */
+    color: #646464; /* цвет ссылки */
     text-decoration: none; /* убираем подчеркивание */
   }
   

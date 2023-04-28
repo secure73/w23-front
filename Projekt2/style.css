@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .parallax_1{
-    background: url(5.jpg); /*Здесь мы задаем фон*/
+    background: url(6.jpg);   /*Здесь мы задаем фон*/
     background-repeat: no-repeat; /*Запрещаем повтор изображения на фоне, для того что бы при уменьшении не было других копий фона*/
     background-position: center; /*Центрируем фон*/
     background-size: cover; /*Указываем что наш фон будет РАВНОМЕРНО заполнять блок*/
@@ -21,7 +21,7 @@
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /*Тень от текста*/
 }
 .parallax_2{
-    background: url(5.jpg);
+    background: url(7.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,7 +51,9 @@
     text-align: center;
     padding: 120px;
 }
-
+.backgrond {
+  transform: translateZ(-10px) scale(2);
+}
 body {
     margin: 0;
       background: linear-gradient(40deg, 
