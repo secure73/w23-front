@@ -82,11 +82,11 @@
           score.ties += 1;
         }
 
-        localStorage.setItem('message', 'hello');
-
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
         Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
       }
+
+      localStorage.setItem('message', 'hello');
 
       function pickComputerMove() {
         const randomNumber = Math.random();
