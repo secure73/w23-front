@@ -33,6 +33,8 @@
     console.log(typeof product);
     */
 
+
+    /*
     const product2 = {
       name: 'shirt',
       ['delivery-time']: '1 day',
@@ -60,7 +62,73 @@
     
     const jsonString = JSON.stringify(product2);
     console.log(JSON.parse(jsonString));
+    */
 
+
+    
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+
+    const object1 = {
+      message: 'hello'
+    };
+
+    const object2 = object1; // Copy by reference
+
+    object1.message = 'Good job!';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+      message: 'Good job!'
+    };
+    console.log(object3 === object1);
+    console.log(object2 === object1);
+
+    const object4 = {
+      message: 'Good job!',
+      price: 799
+    };
+    // const message = object4.message;
+    const { message, price } = object4;
+    console.log(message);
+    console.log(price);
+
+    const object5 = {
+      //message: message
+      message,
+      //method: function function1 () {
+      //  console.log('message');
+      //}
+      method() {
+        console.log('method');
+      }
+    };
+    console.log(object5);
+    object5.method();
+
+
+
+
+
+
+    
+
+    /*
+    const object1 = {
+      name: 'VW Golf',
+      baujahr: 2015,
+      laufleistung: 130000,
+      TÜV: 'vorhanden'
+    };
+
+    console.log(object1);
+
+    console.log(JSON.stringify(object1));
+
+    console.log(JSON.parse(JSON.stringify(object1)))
+    */
     
   </script>
 
