@@ -1,248 +1,110 @@
 html {
-        scroll-behavior: smooth;
-      }
+  scroll-behavior: smooth; /*Плавный скрол*/
+}
+
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    
-  }
-  body {
-    background-image: url(v6.jpg);
-    background-size: 100%;
-    background-position: 100%;
-    ;
-
-  
-  }
- 
-  section {
-    display: flexbox;
-    margin: 0%;
-   
-  }
-h1 {
-  text-align: center;
-  margin: 0%;
-  
-}
-  
-p {
-  margin: 10%;
-  text-align: center;
+height: 100%;
 }
 
-  #home {
-    color: #fff;
-    background-color: rgba(117, 117, 117, 0.075);
-    opacity: 0,1;
-    background: linear-gradient(black, rgba(65, 65, 65, 0.192));
-    background-image: url(8.jpg);
-    height: 1000px;
+
+body {
+background
+}
+
+
+
+
+/*Параметры секций-*/
+
+
+
+
+section {
+  color: #fff;
+}
+
+a {
+transition: all 0s ease-out;
+display: ;
+}
+
+
+
+
+/*Навигационное меню*/
+
+
+
+
+nav {
+display: flex;
+justify-content: center;
+z-index: 1;
+}
+
+
+nav ul {
+display: ;
+padding: 0px;
+}
+
+
+nav ul li {
+transition: all 0.3s ease-in;
+position: ;
+}
+
+
+nav ul li a {
+transition: all .2s ease-out;
+display:;
+}
+
+
+nav ul li:hover > a { 
+display: ;
+}
+
+
+nav ul ul {
+display: none;
+position:;
+}
+
+
+nav ul ul li {
+display: block;
+}
+
+
+nav ul ul li a {
+display: block;
+}
+
+
+nav ul ul li:hover > a {
+
+}
+
+
+nav ul li:hover > ul {
+display: block;
+}
+
+
+/*Параметры для каждой секции прописываются отдельно*/
+
+#home {
+    opacity: ;
+    background-image: url(7.jpg);
+    height: 700px;
   }
+
+
+ #konzept {
   
-  #überuns {
-    color: #fff;
-    background-color: rgba(32, 32, 32, 0.6);
-    height: 1000px;
-    opacity: 1;
-
-    background-image: url(v4.jpg);
-    background-attachment:50vw;
-    background-repeat: repeat-x;
-    background-size: cover;
-    align-items: center;
-    background-position: top;
-  }
-  #team {
-    background: linear-gradient(black
-    gray);
-    background-size: cover;
-    z-index: 1;
-
-    background-image: url(v5.jpg);
-    
-    background-attachment:50vw;
-    background-repeat: repeat-x;
-    background-size: cover;
-    align-items: center;
-    background-position: top;
-  }
-  #kontakt {
-    color: #fff;
-    background-position: 10%;
-    background: linear-gradient(black
-    rgb(71, 71, 71));
-    background-image: url(6.jpg) ;
-    height: 1000px;
-    opacity: 1;
-    background-attachment: scroll;
-    
-
-    background-image: url(v4.jpg);
-    background-attachment:5px;
-    background-size: cover;
-    
-  }
-
-
-
-  #dienstleistungen {
-    color: #fff;
-    background-color: rgba(158, 158, 158, 0.2);
-    height: 1000px;
-    opacity: 0,5;
-  }
-
-
-
-  #konzept {
-    color: #fff;
-    background-color: rgba(56, 56, 56, 0.493);
-    height: 1000px;
-    opacity: 1;
-    background-image: url(v1.jpg);
-    animation:  slide 30s top;
-    background-attachment:5px;
-    background-size: cover;
-    
-  }
-
-
-  
-  #belohnungen {
-    color: #fff;
-    background-color: rgba(56, 56, 56, 0.493);
-    height: 1000px;
-    opacity: 1;
-    background-image: url(8.jpg);
-    background-size: cover;
-    
-  }
-
-  
-  #design {
-    
-    color: #fff;
-    background-color: rgba(56, 56, 56, 0.493);
-    height: 1000px;
-    
-    opacity: 1;
-    background-image: url(6.jpg);
-    background-size: cover;
-
-    
-  }
-
-  a {
-    transition: all 0.2s ease-out;
-    display: flex;
-    margin-top: auto;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif ;
-  }
-  
-  
-
-
-  nav {
-    transition: all 0 ease-out;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    padding: 0px;
-    top: -1px;
-    width: 100vw;
-    background-color: rgb(41, 41, 41);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.603);
-    border-radius: 0px;
-    font-family: Arial, sans-serif;
-    z-index: 1;
-    
-    
-  }
-  nav ul {
-    
-    display: contents;
-    padding: 0px;
-    margin: 0;
-    list-style: none;
-    box-shadow: 0 20px 20px rgba(0, 121, 46, 0);
-    font-family: Arial, sans-serif;
-  }
-  
-  
-  
-  nav ul li {
-    transition: all 0.3s ease-in;
-    position: relative;
-    font-family: Arial, sans-serif;
-  }
-  
-  nav ul li a {
-    transition: all .2s ease-out;
-    display: flexbox;
-    padding-left: 60.4px;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    
-  }
-  
-  nav ul li:hover > a { 
-    display: block;
-    background-color: rgb(0, 119, 26);
-    border-radius: 0px;
-    z-index: 0;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 20px 40px #00633a;
-  }
-  
-  nav ul ul {
-    display: none;
-    position:absolute;
-    top: 100%;
-    border-bottom-right-radius: 200px;
-    border-bottom-left-radius: 20px;
-    left: auto;
-    width: 201px;
-    background-color: #00633a;
-    box-shadow: 0 20px 40px #00633a;
-    
-    
-    
-  }
-  
-  nav ul ul li {
-    display: block;
-    position: relative;
-    text-align: center ;
-    
-  }
-  
-  nav ul ul li a {
-    display: block;
-    padding: 10px;
-    color: #ebebeb;
-    text-decoration: none;
-    font-size: 14px;
-    
-  }
-  
-  nav ul ul li:hover > a {
-   
-    background-color: #00000096;
-  }
-  
-  nav ul li:hover > ul {
-    
-    display: block;
+   background-color: rgba(56, 56, 56, 0.493);
+   height: 700px; 
+   background-image: url(v1.jpg);   
   }

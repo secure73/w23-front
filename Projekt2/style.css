@@ -1,193 +1,78 @@
-*{
-    margin: 0; /*Обнуление отступов задаваемых браузером*/
-    padding: 0;
-    box-sizing: border-box;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+
 }
-.parallax_1{
-    background: url(6.jpg);   /*Здесь мы задаем фон*/
-    background-repeat: no-repeat; /*Запрещаем повтор изображения на фоне, для того что бы при уменьшении не было других копий фона*/
-    background-position: center; /*Центрируем фон*/
-    background-size: cover; /*Указываем что наш фон будет РАВНОМЕРНО заполнять блок*/
-    background-attachment: fixed; /*Самое главное свойство которое и дает нам эффект параллакса*/
-    padding: 30vh 0 70vh 0; /*Здесь общая сумма отступа сверху и снизу должна составлять 100, для того что бы блок занимал всю высоту экрана*/
-    text-align: center; /*Центрируем текст*/
-}
-.parallax_1 h1{
-    color: white; /*Цвет текста*/
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /*Шрифт текста*/
-    font-weight: normal; /*Убираем жирность текста*/
-    font-size: 45px; /*Размер шрифта*/
-    letter-spacing: 2px; /*Расстояние между буквами*/
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /*Тень от текста*/
-}
-.parallax_2{
-    background: url(7.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-}
-.content_1{
-    text-align: center; /*Центрируем текст*/
-    padding: 80px; /*Внутренние отступы которые позволяют тексту находится по центру*/
-    color: #dadada;
-}
-.content_1 p, .content_2 p{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    width: 830px; /*Ограничеваем блок текста по ширине*/
-    display: inline-block; /* После предыдущего свойства текст съезжает в начало страницы, поэтому мы прописываем это свойство*/
-    letter-spacing: 2px; /*Расстояние между буквами*/
-    opacity: 0.8; /*Настраиваем непрозрачность основного текста*/
-    color: #dadada;
-}
-.content_1 h1{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding-bottom: 25px; /*Отделяем заголовок от основного текста*/
-    opacity: 0.8; /*Настраиваем непрозрачность заголовка*/
-    letter-spacing: 1px; /*Расстояние между буквами*/
-}
-.content_2{
-    text-align: center;
-    padding: 120px;
-}
-.backgrond {
-  transform: translateZ(-10px) scale(2);
-}
+
+
 body {
-    margin: 0;
-      background: linear-gradient(40deg, 
-      rgba(0,0,0,1) 10%, 
-      rgba(0,0,0,1) 20%,
-      rgba(0,31,68,1) 30%, 
-      rgba(0,60,130,1) 40%, 
-      rgba(2,87,159,1) 50%, 
-      rgba(3,102,175,1) 60%, 
-      rgba(4,121,195,1) 70%, 
-      rgba(3,154,217,1) 80%, 
-      rgba(2,178,233,1) 90%, 
-      rgba(0,212,255,1) 100%);
-      background-size: 200vw 200vh; 
-      animation: gradient 20s ease infinite;
+  height: 100vh;
+  background-image: url(01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+  box-shadow: 0 5px 10px #000;
+
+
+}
+header .logo {
+  position: relative;
+  padding-left: -100px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  transition: 0.5s ease-in;
+  }
+
+  header .logo:hover {
+    transform: scale(1.2);
+  }
+
+  header nav ul {
+    padding: 20px 40px 50px %;
+  }
+  header nav ul li {
+    position: relative;
+    float:left;
+
+  }
   
-      
-    }
-    
-    @keyframes gradient {
-      0% {
-        background-position: 0%;
-      }
-      50% {
-        background-position: 100%;
-      }
-      100% {
-        background-position: 0%;
-      }
-    }
+  header nav ul li a {
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+  }
 
-    nav {
-
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        color: #6d6d6d;
-        background: linear-gradient(40deg, 
-      rgba(0,0,0,1) 10%, 
-      rgba(0,0,0,1) 20%,
-      rgba(0,31,68,1) 30%, 
-      rgba(0,60,130,1) 40%, 
-      rgba(2,87,159,1) 50%, 
-      rgba(3,102,175,1) 60%, 
-      rgba(4,121,195,1) 70%, 
-      rgba(3,154,217,1) 80%, 
-      rgba(2,178,233,1) 90%, 
-      rgba(0,212,255,1) 100%);
-      background-size: 200vw 200vh; 
-      animation: gradient 20s ease infinite;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.603);
-        border-radius: 10px;
-        
-        
-      }
-      
-      nav ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        box-shadow: 0 20px 20px rgba(0, 0, 0, 0);
-      }
-      
-      nav ul li {
-        position: relative;
-      }
-      
-      nav ul li a {
-        display: flex;
-        padding: 20px;
-        color: #000000;
-        text-decoration: none;
-        font-size: 26px;
-        
-      }
-      
-      nav ul li:hover > a {
-        background-color: #6d6d6d; 
-        animation: gradient 5s ease infinite;
-        background-size: 400%;
-        border-radius: 2px;
-        z-index: 10;
-      }
-      
-      nav ul ul {
-        display: none;
-        position:absolute;
-        top: 100%;
-        border-radius: 20px;
-        left: -0px;
-        width: 200px;
-        background-color: #a5a5a5;
-         border-radius: 2px;
-        animation: gradient 5s ease infinite;
-        background-size: 400%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
-        z-index: 1;
-        
-      }
-      
-      nav ul ul li {
-        position: relative;
-        text-align: center;
-      }
-      
-      nav ul ul li a {
-        display: block;
-        padding: 10px;
-        color: #333;
-        text-decoration: none;
-        font-size: 18px;
-        
-      }
-      
-      nav ul ul li:hover > a {
-        background-color: #dadada;
-      }
-      
-      nav ul li:hover > ul {
-        display: block;
-      }
-    
-      a {
-        transition: all 0.3s ease-out;
-        color: #000; /* цвет ссылки */
-        text-decoration: none; /* убираем подчеркивание */
-      }
-      
-      a:hover {
-        color: #fff; /* изменяем цвет при наведении */
-        background-color: #000; /* добавляем фоновый цвет при наведении */
-        opacity: 0.8; /* изменяем прозрачность при наведении */
-      }
+  header nav ul li a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+    header nav ul li ul {
+      position: absolute;
+      left: 0;
+      width: 180px;
+      background-color: #fff; 
+    }
+    header nav ul li ul li {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, .1 );
+    }
+    header nav ul li ul li ul {
+    left: 180px;    
+    }
