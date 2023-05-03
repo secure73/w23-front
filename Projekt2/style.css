@@ -5,16 +5,19 @@ box-sizing: border-box;
 font-family: sans-serif;
 list-style: none;
 text-decoration: none;
-
+scroll-behavior: smooth;
 }
 
 
-body {
-  height: 100vh;
-  background-image: url(01.jpg);
-  background-size: cover;
-  background-position: center;
+body {  
+  background-size: 100%;
 }
+
+
+
+
+
+
 
 header {
   position: fixed;
@@ -31,20 +34,15 @@ header {
 
 }
 header .logo {
-  position: relative;
-  padding-left: -100px;
-  font-size: 20px;
-  font-weight: 900;
+  position: fixed;
+  padding-right: 80%;
+  font-size: 100%;
+  font-weight: bolder;
   color: #000;
-  transition: 0.5s ease-in;
-  }
-
-  header .logo:hover {
-    transform: scale(1.2);
-  }
+}
 
   header nav ul {
-    padding: 20px 40px 50px %;
+    padding:20px 40px 50px %;
   }
   header nav ul li {
     position: relative;
@@ -62,17 +60,78 @@ header .logo {
   header nav ul li a:hover {
     background-color: #000;
     color: #fff;
+    border-radius: 0;
   }
     header nav ul li ul {
       position: absolute;
       left: 0;
       width: 180px;
       background-color: #fff; 
+      display: none;
+      border-bottom-left-radius: 40px;
     }
     header nav ul li ul li {
       width: 100%;
-      border: 1px solid rgba(0, 0, 0, .1 );
     }
     header nav ul li ul li ul {
-    left: 180px;    
+    left: 180px; 
+    bottom: -96px; 
+    border-bottom-right-radius: 40px; 
+    border-bottom-left-radius: 0px;
+     
     }
+
+    nav ul li:hover > ul {
+      display: initial;
+    }
+
+
+
+
+
+
+
+
+
+    section {
+   }
+   
+   
+
+   #home {
+    background-image: url(v2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  #technologies {
+    background-image: url(v3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+  }
+  #design{
+    background-image: url(v1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  #about {
+    
+    background-image: url(v4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    
+   }
+  #kontakt{
+    background-image: url(02.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 700px;
+  }
+
+
+  background: linear-gradient(rgb(5, 5, 5), rgb(75, 73, 73));
