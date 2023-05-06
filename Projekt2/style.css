@@ -21,7 +21,11 @@ body {
   
 }
 
+body .spotify {
+  z-index: 1;
+  position: sticky;
 
+}
 
 
 
@@ -31,12 +35,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #cc3f46;
+  bottom: ;
+  background: #811f24;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 8%;
-  box-shadow: 0 10px 40px #000000;
+  padding-left: 100%
+ 
   z-index: 1;
 
 
@@ -50,24 +55,25 @@ header .logo {
   color: #000;
 }
 
+
   header nav ul {
     text-transform: uppercase;
-    padding:20px 40px 50px %;
+    padding:20px 40px 0px %;
     
     
   }
   header nav ul li {
     position: relative;
     float:left;
-    box-shadow: 0px 10px 60px #cc3f46;
+    
     
 
   }
   
   header nav ul li a {
     padding: 25px;
-    color: #000;
-    font-size: 16px;
+    color: #cccccc;
+    font-size: 18px;
     display: block;
     font-family: "Orbitron" bold;
     
@@ -77,7 +83,7 @@ header .logo {
   header nav ul li a:hover {
     background-color: #4d4d4d;
     color: #fff;
-    box-shadow: 0px 20px 60px #4d4d4d;
+    box-shadow: 0px 5px 50px #111111;
     
     
   }
@@ -87,7 +93,7 @@ header .logo {
       position: absolute;
       left: 0;
       width: 209px;
-      background-color: #cc3f46; 
+      background-color: #811f24; 
       display: none;
       
             
@@ -114,11 +120,9 @@ header .logo {
 
     footer {
       font-family: "Orbitron" bold;
-      position: static;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #cc3f46;
+      position: sticky;
+      
+      background: #811f24;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -130,17 +134,14 @@ header .logo {
     section {
       width: 100%;
       height: 100%;
-      box-shadow: 0px -110px 300px #cc3f46;
+      box-shadow: 0px -110px 250px #000000;
      }
 
     
 
     section div {
-      
-      
-        padding-top: 38%;
-        color: #fff;
-        font-family: 'Bruno Ace', cursive;
+      color: #fff;
+      font-family: 'Bruno Ace', cursive;
         
         
     }
@@ -166,15 +167,22 @@ header .logo {
 
    #home {
     
-    background-image: url(v2.jpg);
+    background-image: url(3.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
    
   }
 
+  #trainingsbereiche {
+    background-image: url(6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
   #technologies {
-    background-image: url(v3.jpg);
+    background-image: url(7.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -188,13 +196,21 @@ header .logo {
 
   #about {
     
-    background-image: url(v4.jpg);
+    background-image: url(4.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
     
    }
   #kontakt{
+    background-image: url(5.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    ;
+  }
+
+  #html {
     background-image: url(v5.jpg);
     background-position: center;
     background-size: cover; 
@@ -202,19 +218,37 @@ header .logo {
     ;
   }
 
+ 
 
 
-  spotify-player {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #333;
-    display: inline-flexbox;
+
+  .search-form {
+    display: flex;
     justify-content: center;
     align-items: center;
+    
+    padding: 10px;
+    border-radius: 60;
   }
   
-  .spotify-player iframe {
-    position: sticky;
+  .search-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+  
+  .search-form button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+
+  }
+  
+  .search-form button[type="submit"]:hover {
+    background-color: #3e8e41;
   }
