@@ -1,4 +1,5 @@
 
+
 * {
 margin: 0;
 padding: 0;
@@ -19,11 +20,12 @@ body {
   height: 100%;
   width: 100%;
   
+  
 }
 
 body .spotify {
   z-index: 1;
-  position: sticky;
+  position: relative;
 
 }
 
@@ -31,25 +33,51 @@ body .spotify {
 
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   bottom: ;
-  background: #811f24;
+  background: linear-gradient(to left,#811f24, #a10610, #461013);
+    animation: gradient 10s ease infinite;
+    background-size: 200%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 100%
+  box-shadow: 0 80 60px black;
+  z-index: 1
+  ;
+  
+
  
-  z-index: 1;
-
-
+  z-index: 999;
 }
+
+@keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
 header .logo {
   font-family: ;
   position: fixed;
   padding-right: 80%;
+  font-size: 100%;
+  font-weight: bolder;
+  color: #000;
+  
+}
+footer .logo {
+  font-family: ;
+  position: sticky;
+  padding-right: %;
   font-size: 100%;
   font-weight: bolder;
   color: #000;
@@ -72,7 +100,7 @@ header .logo {
   
   header nav ul li a {
     padding: 25px;
-    color: #cccccc;
+    color: #ffffff;
     font-size: 18px;
     display: block;
     font-family: "Orbitron" bold;
@@ -121,36 +149,64 @@ header .logo {
     footer {
       font-family: "Orbitron" bold;
       position: sticky;
+      background: linear-gradient(to left,#000000, #111111, #1b1b1b, #222222);
+    animation: gradient 10s ease infinite;
+    background-size: 200%; 
       
-      background: #811f24;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0 8%;
-      box-shadow: 0 -20px 40px #000;
+      justify-content: space-around;
+      padding-left: 10%;
+      padding-right: 10%;
+      
       
     }
 
     section {
       width: 100%;
       height: 100%;
-      box-shadow: 0px -110px 250px #000000;
+      box-shadow: 0px -10px 20px #000000;
+      overflow: hidden;
      }
 
     
 
     section div {
+      
+      
+      font-size: 16px;
       color: #fff;
       font-family: 'Bruno Ace', cursive;
         
         
     }
+
+     .box {
+ 
+      background:
+      linear-gradient(to right, 
+      rgb(0, 0, 0), rgba(73, 73, 73, 0)
+      );
+      align-self: center;
+      position: relative;
+      padding: 15rem;
+      height: 100%
+      
+      ;
+    }
     
     section div h1 {
-      font-size: 40px;
+      font-size: 5em;
       z-index: 
     }
 
+
+
+
+
+
+    
 
 
 
@@ -171,7 +227,6 @@ header .logo {
     background-position: center;
     background-size: cover;
     height: 100vh;
-   
   }
 
   #trainingsbereiche {
@@ -220,35 +275,322 @@ header .logo {
 
  
 
+  .spotify-player {
+    position: relative;
+    
+    
+    z-index: 1;
+  }
 
 
-  .search-form {
+
+  
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+    
+    section div h1 {
+      font-size: 1em;
+    }
+
+    section div {
+      
+      
+      font-size: 12px;
+      color: #fff;
+      font-family: 'Bruno Ace', cursive;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    body {
+      font-size: 14px;
+    }
+    
+    section div h1 {
+      font-size: 2em;
+  }
+
+
+
+  header {
+    position: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* set the width of the menu */
+    background: linear-gradient(to bottom, #811f24, #a10610, #461013);
+    animation: gradient 10s ease infinite;
+    background-size: 200%; 
     display: flex;
+    flex-direction: column; /* make the menu items appear in a column */
     justify-content: center;
     align-items: center;
+    box-shadow: 0 8px 6px -6px black;
+    z-index: 1;
+  }
+  
+  header .logo {
     
-    padding: 10px;
-    border-radius: 60;
+    font-family: ;
+    position: fixed;
+    top: 20px; /* adjust the logo position */
+    left: 080%;
+    right: 1px; /* adjust the logo position */
+    font-size: 100%;
+    font-weight: bolder;
+    color: #000;
   }
   
-  .search-form input[type="text"] {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 40px;
-    margin-right: 10px;
+  header nav ul {
+    text-transform: uppercase;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
   }
   
-  .search-form button[type="submit"] {
-    padding: 10px;
-    border: none;
-    border-radius: 40px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+  header nav ul li {
+    position: relative;
+    width: 100%;
+  }
+  
+  header nav ul li a {
+    padding: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    font-family: "Orbitron" bold;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+    box-shadow: 0px 5px 50px #111111;
+  }
+  
+  header nav ul li ul {
+    position: absolute;
+    top: 0;
+    left: 200px; 
+    width: 200px; 
+    background-color: #811f24; 
+    display: none;
+  }
+  
+  header nav ul li:hover > ul {
+    display: initial;
+  }
 
-  }
+
+
+
+
+
+
+}
+
+
+
+
+/* Кнопка для открытия */
+.css-modal-open {
+  display: inline-flex;
+  margin: px;
+  text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 30px;
+  color: #f5f5f5;
   
-  .search-form button[type="submit"]:hover {
-    background-color: #3e8e41;
+  text-transform: uppercase;
+  font-family: 'Bruno Ace', cursive;
+  border-radius: 50px;
+  
+  cursor: pointer;
+  border: px solid #000000;
+  overflow: hidden;
+  z-index: 1;    
+}
+.css-modal-open:hover,
+.css-modal-open:active,
+.css-modal-open:focus {
+
+}
+.css-modal-open:before {
+  
+ 
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.css-modal-open:hover:before,
+.css-modal-open:active:before,
+.css-modal-open:focus:before {
+  transform: translateX(0);
+}
+
+
+
+/* Контейнер для кнопки */
+.css-modal-target-container {
+  height: auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.css-modal-open:hover,
+.css-modal-open:active,
+.css-modal-open:focus {
+  color: #FFF;
+}
+.css-modal-open:before {
+  
+  
+  
+  
+  transition: transform 0.5s;
+  transform: translateX(-100%);
+  z-index: -1;
+}
+.css-modal-open:hover:before,
+.css-modal-open:active:before,
+.css-modal-open:focus:before {
+  transform: translateX(0);
+}
+
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+  display: none;
+}
+.css-modal-target:target {
+  display:flex;
+  align-items:center;
+  justify-content:center;    
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: bg 0.5s ease;
+  background: rgba(49, 49, 49, 0.7);
+}
+
+/* Модальное окно */
+.css-modal-target .cmt {
+  
+  font-family: 'Bruno Ace', cursive;  
+  font-size: 16px;
+  padding: 2em;
+  align-items: center;
+  justify-content: center;
+  height: 82%;
+  width: 65%;
+  z-index: 8;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+  border: 1px solid #1b1b1b;
+  border-radius: 5px;
+  background-color: #111111;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: auto;
+  animation: scale 0.5s ease;
+}
+
+
+
+.css-modal-close:after {
+ 
+  
+
+}
+.css-modal-close:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  content: "";
+  cursor: default;
+}
+
+/* Анимации */
+@keyframes scale {
+  0% {
+      transform: scale(0);
   }
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes move {
+  0% {
+      right: -80px;
+  }
+  100% {
+      right: 20px;
+  }
+}
+@keyframes bg {
+  0% {
+      background: rgba(51, 122, 183, 0);
+  }
+  100% {
+      background: rgba(49, 49, 49, 0.7);
+  }
+}
+
+
+
+.container3 {
+  background-color: #4d4d4d;
+  box-shadow: 0 10px 20px#000;
+  padding: 50em;
+  width: 100vw;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container3 input {
+  border-radius: 5px;
+  padding: 5px;
+  width: 250px;
+  position: relative;
+  justify-content: space-around;
+  ;
+}
+
+
+/*мусор? 
+.modal {
+  color: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 10000;
+}
+
+
+.css-modal-target {
+  display: none;
+}
+*/
+
+
+
+
+
+
+

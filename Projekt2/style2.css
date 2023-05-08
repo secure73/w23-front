@@ -1,0 +1,266 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Bruno Ace', cursive;
+
+
+
+list-style: none;
+text-decoration: none;
+scroll-behavior: smooth;
+text-transform: uppercase;
+}
+
+
+body {  
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  
+}
+
+body .spotify {
+  z-index: 1;
+  position: sticky;
+
+}
+
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: ;
+  background: #811f24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100%
+ 
+  z-index: 1;
+
+
+}
+header .logo {
+  font-family: ;
+  position: fixed;
+  padding-right: 80%;
+  font-size: 100%;
+  font-weight: bolder;
+  color: #000;
+}
+
+
+  header nav ul {
+    text-transform: uppercase;
+    padding:20px 40px 0px %;
+    
+    
+  }
+  header nav ul li {
+    position: relative;
+    float:left;
+    
+    
+
+  }
+  
+  header nav ul li a {
+    padding: 25px;
+    color: #cccccc;
+    font-size: 18px;
+    display: block;
+    font-family: "Orbitron" bold;
+    
+    
+  }
+
+  header nav ul li a:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+    box-shadow: 0px 5px 50px #111111;
+    
+    
+  }
+  
+    header nav ul li ul {
+      
+      position: absolute;
+      left: 0;
+      width: 209px;
+      background-color: #811f24; 
+      display: none;
+      
+            
+    }
+    header nav ul li ul li {
+      width: 100%;
+      
+      
+    }
+    header nav ul li ul li ul {
+    left: 209px; 
+    bottom: -138px; 
+    border-bottom-right-radius: 40px; 
+    border-bottom-left-radius: 0px;
+    overflow: hidden
+    ;
+     
+    }
+
+    nav ul li:hover > ul {
+      display: initial;
+    }
+
+
+    footer {
+      font-family: "Orbitron" bold;
+      position: sticky;
+      
+      background: #811f24;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8%;
+      box-shadow: 0 -20px 40px #000;
+      
+    }
+
+    section {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px -110px 250px #000000;
+     }
+
+    
+
+    section div {
+      color: #fff;
+      font-family: 'Bruno Ace', cursive;
+        
+        
+    }
+    
+    section div h1 {
+      font-size: 40px;
+      z-index: 
+    }
+
+
+
+
+
+  
+
+
+
+
+
+
+   
+   
+
+   #home {
+    
+    background-image: url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+  }
+
+  #trainingsbereiche {
+    background-image: url(6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #technologies {
+    background-image: url(7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  #design{
+    background-image: url(v1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  #about {
+    
+    background-image: url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+   }
+  #kontakt{
+    background-image: url(5.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    ;
+  }
+
+  #html {
+    background-image: url(v5.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    ;
+  }
+
+  #java {
+    background-image: url(19.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    ;
+  }
+
+ 
+
+
+
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    border-radius: 60;
+  }
+  
+  .search-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+  
+  .search-form button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+
+  }
+  
+  .search-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+body {
+  background-image: url(20.jpg);
+}
