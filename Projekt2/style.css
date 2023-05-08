@@ -72,6 +72,15 @@ header .logo {
   font-size: 100%;
   font-weight: bolder;
   color: #000;
+
+  header .logo {
+    font-family: ;
+    position: fixed;
+    padding-right: 80%;
+    font-size: 100%;
+    font-weight: bolder;
+    color: #000;
+  }
   
 }
 footer .logo {
@@ -120,7 +129,7 @@ footer .logo {
       
       position: absolute;
       left: 0;
-      width: 209px;
+      width: 229px;
       background-color: #811f24; 
       display: none;
       
@@ -132,8 +141,8 @@ footer .logo {
       
     }
     header nav ul li ul li ul {
-    left: 209px; 
-    bottom: -138px; 
+    left: 229px; 
+    bottom: -166px; 
     border-bottom-right-radius: 40px; 
     border-bottom-left-radius: 0px;
     overflow: hidden
@@ -150,7 +159,7 @@ footer .logo {
       font-family: "Orbitron" bold;
       position: sticky;
       background: linear-gradient(to left,#000000, #111111, #1b1b1b, #222222);
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
     background-size: 200%; 
       
       display: flex;
@@ -185,12 +194,11 @@ footer .logo {
      .box {
  
       background:
-      linear-gradient(to right, 
-      rgb(0, 0, 0), rgba(73, 73, 73, 0)
+      linear-gradient(to right, rgba(0, 0, 0, 0.377), rgba(73, 73, 73, 0)
       );
       align-self: center;
       position: relative;
-      padding: 15rem;
+      padding: 11rem;
       height: 100%
       
       ;
@@ -223,27 +231,27 @@ footer .logo {
 
    #home {
     
-    background-image: url(3.jpg);
+    background-image: url(daten/15.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
   }
 
   #trainingsbereiche {
-    background-image: url(6.jpg);
+    background-image: url(daten/12.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
   }
 
   #technologies {
-    background-image: url(7.jpg);
+    background-image: url(daten/7.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
   }
   #design{
-    background-image: url(v1.jpg);
+    background-image: url(daten/v1.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -251,25 +259,25 @@ footer .logo {
 
   #about {
     
-    background-image: url(4.jpg);
+    background-image: url(daten/v3.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
     
    }
   #kontakt{
-    background-image: url(5.jpg);
+    background-image: url(daten/5.jpg);
     background-position: center;
     background-size: cover; 
     height: 100vh;
     ;
   }
 
-  #html {
-    background-image: url(v5.jpg);
+  #java {
+    background-image: url();
     background-position: center;
     background-size: cover; 
-    height: 100vh;
+    height: 100px;
     ;
   }
 
@@ -320,12 +328,12 @@ footer .logo {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 100%; /* set the width of the menu */
+    width: 100%; 
     background: linear-gradient(to bottom, #811f24, #a10610, #461013);
     animation: gradient 10s ease infinite;
     background-size: 200%; 
     display: flex;
-    flex-direction: column; /* make the menu items appear in a column */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 6px -6px black;
@@ -336,9 +344,9 @@ footer .logo {
     
     font-family: ;
     position: fixed;
-    top: 20px; /* adjust the logo position */
+    top: 20px; 
     left: 080%;
-    right: 1px; /* adjust the logo position */
+    right: 1px;
     font-size: 100%;
     font-weight: bolder;
     color: #000;
@@ -403,7 +411,7 @@ footer .logo {
   position: relative;
   font-size: 16px;
   line-height: 20px;
-  padding: 12px 30px;
+ 
   color: #f5f5f5;
   
   text-transform: uppercase;

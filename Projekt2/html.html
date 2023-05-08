@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100px;">
   <head>
     <title>Registrierungsseite</title>
     <link rel="stylesheet" href="style.css">
@@ -10,20 +10,25 @@
   rel="stylesheet">
   </head>
   <body>
-    <div class="container3" style="position: relative;">
-      <h1>Registrierung</h1>
-      <form>
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="email" id="email" placeholder="E-Mail" required>
-        <input type="password" id="password" placeholder="Passwort" required>
-        <input type="date" id="birthdate" placeholder="Geburtsdatum" required>
-        <input type="submit" value="Registrieren" onclick="register()">
+    
+    <div style="height: 100vh; position: relative; background-repeat: no-repeat; background-image: url(daten/18.jpg);">
+      <h1>Registrieren</h1>
+      <h2 style="padding-left: 49% ;"><button style="position: display: top: ;;: ;"><li><a href="index.html">Back</a></li></button></h2>
+      <form style="padding-left: 50em; padding-right: 40em; opacity: 0.5; padding-top: 34em;">
+        
+        <input style="height: 30px;width: 290px; "type="text" id="name" placeholder="Name" required>
+        <input style="height: 30px;width: 290px; "type="email" id="email" placeholder="E-Mail" required>
+        <input style="height: 30px;width: 290px; "type="password" id="password" placeholder="Passwort" required>
+        <input style="height: 30px;width: 290px; "type="date" id="birthdate" placeholder="Geburtsdatum" required>
+        <input style="height: 30px;width: 290px; background-color: #a10610; border: none; style="height: 3em; width: 10em; background-color: #811f24;  border-radius: 15px" type="submit" value="Registrieren" onclick="register()">
       </form>
-      <form style="padding-top: 1em;">
-        <input type="email" id="loginEmail" placeholder="E-Mail" required>
-        <input type="password" id="loginPassword" placeholder="Passwort" required>
-        <input type="submit" value="Einloggen" onclick="login()">
+      <form style="padding-left: 50em; padding-right: 40em; opacity: 0.5;">
+        <input style="height: 30px;width: 290px; type="email" id="loginEmail" placeholder="E-Mail" required>
+        <input style="height: 30px;width: 290px; type="password" id="loginPassword" placeholder="Passwort" required>
+        <input style="height: 30px;width: 290px; background-color: #a10610; border: none; style="height: 3em; width: 10em; background-color: #811f24; border-radius: 15px" type="submit" value="Einloggen" onclick="login()">
+    
       </form>
+      
     </div>
     <script src="script.js"></script>
     <div id="myDiv">Text auf der Seite</div>
