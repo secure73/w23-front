@@ -14,7 +14,7 @@ erst dann:
         npm install react react-dom next
 
 
-        npm install -g npm@9.6.6 (Update)
+        npm install -g npm@9.6.6
 
 
 (ka, ob ihr diese dependencies schon installiert habt,
